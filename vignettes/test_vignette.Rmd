@@ -10,15 +10,22 @@ vignette: >
 ---
 
 ```{r setup, include=FALSE}
-library(knitr)
-knitr::opts_chunk$set(echo = TRUE)
+knitr::read_chunk(system.file("vignette_data","test2.R",package="testreadchunk"))
 ```
 
-```{r test1}
-read_chunk("test.R")
+```{r libs,message=FALSE}
+library(glmmTMB)
+library(coda)     ## MCMC utilities
+library(reshape2) ## for melt()
+## graphics
+library(lattice)
+library(ggplot2); theme_set(theme_bw())
+```
+
+```{r fit1}
+```
+
+``{r test3}
 ```
 
 
-```{r test2, include=FALSE, message=FALSE}
-read_chunk(system.file("vignette_data","test2.R",package="testreadchunk"))
-```

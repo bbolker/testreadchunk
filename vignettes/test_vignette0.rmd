@@ -1,0 +1,16 @@
+---
+title: "test0"
+author: "Mollie Brooks"
+date: "12/17/2018"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{test0}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+Just some regular stuff
+
+```{r}
+pi
+```
