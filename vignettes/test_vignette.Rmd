@@ -1,0 +1,24 @@
+---
+title: "test"
+author: "Mollie Brooks"
+date: "12/17/2018"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{test}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r test1}
+read_chunk("test.R")
+```
+
+
+```{r test2, include=FALSE, message=FALSE}
+read_chunk(system.file("vignette_data","test2.R",package="testreadchunk"))
+```
